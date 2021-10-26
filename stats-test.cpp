@@ -2,7 +2,7 @@
 
 #include "catch.hpp"
 #include "stats.h"
-#include "stats.c"
+//#include "stats.c"
 #include <stdlib.h>
 #include <math.h>
 #define computeStats {"",0,0.0f} 
@@ -22,7 +22,7 @@ TEST_CASE("reports average, minimum and maximum") {
     REQUIRE(abs(computedStats.max - 8.9) < epsilon);
     REQUIRE(abs(computedStats.min - 1.5) < epsilon);
 }
-
+#define s {"",0,0.0f} 
 TEST_CASE("average is NaN for empty array") {
     Stats computedStats = compute_statistics(0, 0);
     //All fields of computedStats (average, max, min) must be
