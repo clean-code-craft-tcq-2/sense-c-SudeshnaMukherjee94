@@ -8,6 +8,7 @@
 #define computeStats {"",0,0.0f} 
 struct Stats //new
 {
+    float average;
 };
 
 TEST_CASE("reports average, minimum and maximum") {
