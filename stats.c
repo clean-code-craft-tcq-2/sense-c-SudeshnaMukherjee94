@@ -1,5 +1,5 @@
 #include "stats.h"
-
+#define s {"",0,0.0f} 
 struct Stats compute_statistics(const float* numberset, int setlength) {
  struct Stats s; 
     s.average = 0;
