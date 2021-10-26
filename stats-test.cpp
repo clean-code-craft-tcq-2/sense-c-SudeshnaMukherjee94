@@ -7,7 +7,8 @@
 #include <math.h>
 struct Stats //new
 {
-}
+    float computeStats;
+};
 
 TEST_CASE("reports average, minimum and maximum") {
     float numberset[] = {1.5, 8.9, 3.2, 4.5};
