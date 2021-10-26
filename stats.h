@@ -5,5 +5,5 @@
 
 typedef int (*alerter_funcptr)(int,int);
 
-extern int emailAlertCallCount;
-extern int ledAlertCallCount;
+// extern int emailAlertCallCount;
+// extern int ledAlertCallCount;
