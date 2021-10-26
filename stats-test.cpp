@@ -5,9 +5,9 @@
 
 #include <stdlib.h>
 #include <math.h>
+#define computeStats{"",0,0.0f} 
 struct Stats //new
 {
-    float computeStats;
 };
 
 TEST_CASE("reports average, minimum and maximum") {
