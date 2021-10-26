@@ -2,7 +2,7 @@
 #define computeStats {"",0,0.0f} 
 struct Stats //new
 {
-    float average;
+    double average;
     float max;
     float min;
 };
