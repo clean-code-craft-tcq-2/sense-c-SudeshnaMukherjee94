@@ -1,11 +1,11 @@
 #include "stats.h"
-#define computeStats {"",0,0.0f} 
+/*#define computeStats {"",0,0.0f} 
 struct Stats //new
 {
     float average;
     float max;
     float min;
-};
+};*/
 
 struct Stats compute_statistics(const float* numberset, int setlength) {
  struct Stats s; 
