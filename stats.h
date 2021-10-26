@@ -3,6 +3,14 @@
 
 //typedef void (*alerter_funcptr)();
 
+#define computeStats {"",0,0.0f} 
+struct Stats //new
+{
+    float average;
+    float max;
+    float min;
+};
+
 typedef int (*alerter_funcptr)(int,int);
 int check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats)
 {
