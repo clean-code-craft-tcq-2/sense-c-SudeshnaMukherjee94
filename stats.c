@@ -8,8 +8,12 @@ struct Stats //new
 };
 
 static struct Stats compute_statistics(const float* numberset, int setlength) {
- struct Stats s;
-   int sum=0,i;
+ struct Stats s;    
+    s.average = 0;
+    s.min = 0;
+    s.max = 0;
+    
+   /*int sum=0,i;
    s.min=numberset[0];
    s.max=numberset[0];
    for(i=0;i<setlength;i++)
@@ -25,10 +29,8 @@ static struct Stats compute_statistics(const float* numberset, int setlength) {
       }
    }
    
-    s.average = sum/setlength;
-//    s.average = 0;
-//    s.min = 0;
-//    s.max = 0;
+    s.average = sum/setlength;*/
+
 }
 
 //#define emailAlerter (int max, int threshold)
