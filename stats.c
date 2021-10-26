@@ -7,7 +7,7 @@ struct Stats //new
     float min;
 };
 
-struct Stats compute_statistics(const float* numberset, int setlength) {
+static struct Stats compute_statistics(const float* numberset, int setlength) {
  struct Stats s; 
     s.average = 0;
     s.min = 0;
@@ -33,7 +33,7 @@ static int ledAlerter (int max, int threshold)
         return 0;
 }
 
-int check_and_alert (float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats)
+static int check_and_alert (float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats)
 {
     int a = maxThreshold;
     int b = computedStats.average;
@@ -45,5 +45,5 @@ int check_and_alert (float maxThreshold, alerter_funcptr alerters[], struct Stat
     return 0;  
 }
 
-int emailAlertCallCount = 0;
-int ledAlertCallCount = 0;
+static int emailAlertCallCount = 0;
+static int ledAlertCallCount = 0;
