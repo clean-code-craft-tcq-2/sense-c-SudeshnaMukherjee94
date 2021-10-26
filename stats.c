@@ -17,7 +17,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
 //#define emailAlerter (int max, int threshold)
 //#define ledAlerter (int max, int threshold)
 
-int emailAlerter (int max, int threshold)
+static int emailAlerter (int max, int threshold)
 {
     if (max>threshold)
         return 1;
@@ -25,7 +25,7 @@ int emailAlerter (int max, int threshold)
         return 0;
 }
 
-int ledAlerter (int max, int threshold)
+static int ledAlerter (int max, int threshold)
 {
     if (max>threshold)
         return 1;
