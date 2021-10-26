@@ -9,6 +9,8 @@
 struct Stats //new
 {
     float average;
+    float max;
+    float min;
 };
 
 TEST_CASE("reports average, minimum and maximum") {
