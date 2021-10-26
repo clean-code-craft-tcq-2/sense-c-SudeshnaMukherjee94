@@ -2,8 +2,9 @@
 // struct Stats compute_statistics(const float* numberset, int setlength);
 
 //typedef void (*alerter_funcptr)();
+
 typedef int (*alerter_funcptr)(int,int);
-/*int check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats)
+int check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats)
 {
     int a = maxThreshold;
     int b = computedStats.average;
@@ -13,6 +14,6 @@ typedef int (*alerter_funcptr)(int,int);
     return 1;
     else
     return 0;  
-}*/
+}
 extern int emailAlertCallCount;
 extern int ledAlertCallCount;
