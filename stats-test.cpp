@@ -5,7 +5,7 @@
 
 #include <stdlib.h>
 #include <math.h>
-#define computeStats{"",0,0.0f} 
+#define computeStats {"",0,0.0f} 
 struct Stats //new
 {
 };
