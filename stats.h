@@ -3,7 +3,7 @@
 
 //typedef void (*alerter_funcptr)();
 typedef int (*alerter_funcptr)(int,int);
-int check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats);
+int check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats)
 {
     int a = maxThreshold;
     int b = computedStats.average;
