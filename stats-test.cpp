@@ -18,13 +18,13 @@ TEST_CASE("reports average, minimum and maximum") {
 }
 //#define s  
 TEST_CASE("average is NaN for empty array") {
-    struct Stats computedStats = compute_statistics(0, 0);
+    // struct Stats computedStats = compute_statistics(0, 0); // C throws compiler error for NaN
     //All fields of computedStats (average, max, min) must be
     //NAN (not-a-number), as defined in math.h
     //struct Stats s;
     // double NAN = 0.0/0.0; // C throws compiler error if I am writing 0.0/0.0
     //Design the REQUIRE statement here.
-    // REQUIRE(computedStats.average == 0); // C throws compiler error if I am writing 0.0/0.0
+    // REQUIRE(computedStats.average == NAN); // C throws compiler error if I am writing 0.0/0.0
     //Use https://stackoverflow.com/questions/1923837/how-to-use-nan-and-inf-in-c
 }
 
