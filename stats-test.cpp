@@ -23,7 +23,7 @@ TEST_CASE("average is NaN for empty array") {
     //NAN (not-a-number), as defined in math.h
     //struct Stats s;
     // double NAN = 0.0/0.0;
-    computedStats.average = NAN;
+    computedStats.average = 0.0/0.0;
     computedStats.min = NAN;
     computedStats.max = NAN;
     //Design the REQUIRE statement here.
