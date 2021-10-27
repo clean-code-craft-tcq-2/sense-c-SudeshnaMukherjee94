@@ -66,5 +66,6 @@ static int check_and_alert (float maxThreshold, alerter_funcptr alerters[], stru
     return 0;  
 }
 
+alerter_funcptr alerters1[] = {emailAlerter, ledAlerter};
 // int emailAlertCallCount = 0;
 // int ledAlertCallCount = 0;
