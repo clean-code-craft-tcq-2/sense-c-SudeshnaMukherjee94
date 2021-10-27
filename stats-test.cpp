@@ -45,5 +45,5 @@ TEST_CASE("raises alerts when max is greater than threshold") {
     // you can define call-counters along with the functions, as shown below
     // REQUIRE(emailAlertCallCount == 1);
     // REQUIRE(ledAlertCallCount == 1);
-    REQUIRE(Alert == 1);
+    REQUIRE(Alert == 1); //checking if any one of the alert is set
 }
