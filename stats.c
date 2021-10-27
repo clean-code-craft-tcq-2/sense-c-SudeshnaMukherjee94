@@ -31,7 +31,7 @@ static struct Stats compute_statistics(const float* numberset, int setlength) {
    
     s.average = sum/setlength;
     
-    return average;
+    return s;
 }
 
 //#define emailAlerter (int max, int threshold)
